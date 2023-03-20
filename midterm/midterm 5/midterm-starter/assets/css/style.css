@@ -22,12 +22,16 @@
     border:none;
     background-color:orange;
 }
+.logo:hover{
+    cursor: pointer;
+}
 
 .menu-header{
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    margin: auto;
+    
     margin-right: 3vw;
     width: 83vw;
     height: 50px;
@@ -36,12 +40,12 @@
     
 }
 .description{
-    
+    position:fixed;
     display:flex;
+    margin: -10px;
     flex-direction:row;
     justify-content: flex-start;
     margin-left: 3vw;
-    align-items: center;
     font-size: 1.3vw;
 }
 .starter{
@@ -50,7 +54,7 @@
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 .relish{
-    color: green;
+    color: rgb(1, 182, 1);
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 .saurerkraut{
@@ -58,15 +62,15 @@
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 .onions{
-    color: plum;
+    color: rgb(242, 186, 242);
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 .ketchup{
-    color: rgb(248, 35, 35);
+    color: rgb(255, 125, 125);
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 .mustard{
-    color: rgba(174, 174, 0, 0.866);
+    color: rgba(255, 231, 145, 0.866);
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 #content{
@@ -74,23 +78,34 @@
     flex-direction: row;
     justify-content: space-between;
     height: 100vh;
-    
+    bottom:0;
 
 }
 #right-side{
-
+    position:absolute;
+    right: 0%;
+    
     height: 100vh;
     width: 70vw;
     background-color: orange;
+
 }
 .rs-display{
+    position:relative;
     object-fit: cover;
+    padding: 0;
+    margin: 0;
     min-width: 100%;
     max-width: 100%;
     min-height: 100%;
     overflow: hidden;
 }
-
+.rs-display img{
+    position:relative;
+    padding: 0;
+    margin: 0;
+    
+}
 
 .text{
     position: relative;
@@ -117,7 +132,7 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 24px;
     border-radius: 25px;
     width: 12vw;
     height:7vh;
@@ -127,7 +142,7 @@
 
 }
 .menu-button:hover{
-    font-size: 24px;
+    font-size: 32px;
     width: 14vw;
     height: 9vh;
     margin-top: 1.5vh;
@@ -144,6 +159,16 @@
     
 }
 
+.background{
+    margin-top:-20vh;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    position: fixed;
+    opacity:0.4;
+    background-color: #000;
+}
+
 #glizzies{
     display: flex;
     flex-wrap: wrap;
@@ -153,9 +178,17 @@
     margin:10px;
     min-height: 75vh;
     margin-top: 50px;
-    
 }
+.dog:hover{
+    cursor: pointer;
+    opacity: .9;
+    text-shadow: 1px 1px;
+  
+}
+
 .caption{
+    font-family: 'Leto';
+    color: white;
     display: flex;
     flex-direction: column;
     text-align: center;
