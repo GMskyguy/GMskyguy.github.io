@@ -1,0 +1,164 @@
+.body{
+    background: orange;
+}
+.header{
+    width: 100%;
+    height: 100px;
+    background: orange;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header img{
+    object-fit: cover;
+    height: 90px;
+    margin-left: 3vw;
+}
+.logo{
+    border:none;
+    background-color:orange;
+}
+
+.menu-header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 3vw;
+    width: 83vw;
+    height: 50px;
+    border-radius: 25px;
+    background: rgba(156, 0, 0, 0.886);
+    
+}
+.description{
+    
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    margin-left: 3vw;
+    align-items: center;
+    font-size: 1.3vw;
+}
+.starter{
+    
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.relish{
+    color: green;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.saurerkraut{
+    color: papayawhip;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.onions{
+    color: plum;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.ketchup{
+    color: rgb(248, 35, 35);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.mustard{
+    color: rgba(174, 174, 0, 0.866);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+#content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100vh;
+    
+
+}
+#right-side{
+
+    height: 100vh;
+    width: 70vw;
+    background-color: orange;
+}
+.rs-display{
+    object-fit: cover;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+
+.text{
+    position: relative;
+    margin-top: 40vh;
+    margin-bottom: 5vh;
+    margin-left: 3vw;
+}
+
+
+.hotdog-bun{
+    width: 10vw;
+    height: 12vh;
+    margin-left: 3vw;
+    background-color: orange;
+    border-radius: 20px;
+    
+    
+}
+.menu-button{
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 25px;
+    width: 12vw;
+    height:7vh;
+    margin-top: 2.5vh;;
+    margin-left:-1vw;
+
+
+}
+.menu-button:hover{
+    font-size: 24px;
+    width: 14vw;
+    height: 9vh;
+    margin-top: 1.5vh;
+    margin-left: -2vw;
+    border-radius: 40px;
+    cursor:pointer;
+}
+
+.heading{
+    margin:15vw;
+    text-align: center;
+    font-size: 56px;
+    color: white;
+    
+}
+
+#glizzies{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:10px;
+    margin:10px;
+    min-height: 75vh;
+    margin-top: 50px;
+    
+}
+.caption{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 32px;
+    
+}
