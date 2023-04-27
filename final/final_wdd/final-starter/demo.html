@@ -1,0 +1,126 @@
+<head>
+    <link rel = "stylesheet" href="accounting.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+</head>
+<body>
+    <header class = "header">
+        <div class = "heading">
+            <div class = "hright-side">
+                <div class="logo"> 
+                    <a href="index.html">
+                    <button class = "logo">
+                        <img src = "assets/images/WDD_logo.png" class = "headerimg">
+                    </button>
+                    </a>
+                </div>
+            </div>  
+            <div class = "hleft-side">
+                <div class = "sign-in">Sign in</div>
+                <div class="pricing"> 
+                    <a href="pricing.html">
+                    <button class = "headerbutton">Pricing</button>
+                    </a>
+                </div>
+                <div class="demo"> 
+                    <a href="demo.html">
+                    <button class = "headerbutton">Try Demo</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </header>
+    <hr class = "solid" width = 1500>
+    <div class = "main-content">
+        <div class = "left-side">
+
+            <div class = "upload">Upload Transactions</div>
+            <div class ="drop-zone">
+                
+                <span class = "drop-zone__prompt">
+                    Click here!
+                </span>
+                <form class="form" id = "myForm">
+                    <input type="file" name="files" class="drop-zone__input">
+                </form>
+                
+            </div>
+            <button type = "button" class = "btnUpload"> Upload Files</button>
+
+            
+        </div>
+        <div class = middle>
+            <div class = "vertical"></div> 
+            <div class = "or"> Or </div>
+            <div class = "vertical2"></div>
+            <div class="generate statements"> 
+                <a href="financial.html">
+                <button class = "generate-statements">Generate Statements</button>
+                </a>
+            </div>
+        </div>
+        
+        <div class = "right-side">
+            <div class = "connectbank"> Connect your bank</div>
+            <div class = "bank-lookup"> 
+                <div class = "bank-name">Enter bank name</div>
+                <img src = "assets/images/Search.png">
+            </div>
+            <div class = "supported">Supported Banks</div>
+            <div class = "bank-logo">
+                <div class = outline>
+                    <div class = brex>
+                        <img src = "assets/images/brex-logo.png" class = "banklogo">
+                    </div>
+
+                </div>
+                <div class = outline>
+                    <div class = chase>
+                        <img src = "assets/images/chase.png"class = "banklogo">
+                    </div>
+                    
+                </div>
+                <div class = outline>
+                    <div class = fargo>
+                        <img src = "assets/images/Wells-Fargo-Emblem.png"class = "banklogo">
+                    </div>
+                    
+                </div>
+                <div class = outline>
+                    <div class = mercury>
+                        <img src = "assets/images/mercury.png"class = "banklogo"> 
+                    </div>
+                    
+                </div>    
+            </div>
+            <button type = "button" class = "btnUpload"> Connect</button>
+
+        </div>
+    </div>      
+
+
+
+    <script src="accounting.js"></script>
+    <script>
+        const btnUpload = document.getElementByID("btnUpload");
+        const inpFile = document.getElementsByClass("drop-zone__input");
+        const resultText = document.getElementByID("resultText");
+
+        btnUpload.addEventListener("click", () => {
+            const formData = new FormData();
+
+            formData.append("pdfFile", inpFile.file[0]);
+
+            fetch("/extract-text", {
+                method: "post",
+                body: formData
+            }).then(response => {
+                return response.text();
+            }).then(extractedText => {
+                resultText.value = extractedText;
+            });
+        });
+    </script>
+</body>

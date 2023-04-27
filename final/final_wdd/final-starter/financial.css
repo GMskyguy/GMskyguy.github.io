@@ -1,0 +1,197 @@
+.heading{
+    height: 10%;
+    margin-left: -6px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+    margin-top: -13vh;
+
+    
+    
+}.headerimg{
+    max-height: 4vh;
+}
+.hleft-side{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+.logo{
+    background-color: white;
+    border: none;
+    margin:15px;
+}
+.logo:hover{
+    cursor:pointer;
+}
+.accountinglogo{
+    max-height: 3.5vh;
+    max-width: 15vw;
+}
+.sign-in{
+    margin: 15px;
+    margin-top: 3vh;
+    margin-right: 50px;
+    margin-bottom: 25px;
+    font-size: 1.5vw;
+    font-family: 'Inter';
+}
+.sign-in:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.headerbutton{
+    width: 12vw;
+    height: 6vh;
+    background-color: #660CD9;
+    border-radius: 15px;
+    border-color: black;
+    margin: 15px;
+    color: white;
+    font-size: 18;
+    font-family: 'Inter';
+}
+.headerbutton:hover{
+    cursor: pointer;
+    background-color: #44009A;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-top: 13vh;
+
+}
+.sheet{
+    height: 50vh;
+    width: 20vw;
+}
+.Balance-Sheet{
+    display: flex;
+    flex-direction: column;
+}
+
+.PandL{
+    display: flex;
+    flex-direction:column;
+}
+.head{
+    font-family: 'Inter';
+    font-size: 4vh;
+    color:#44009A;
+    text-align: center;
+}
+.descriptionleft{
+    font-family: 'Inter';
+    font-size: 1.5vw;
+    color:#44009A;
+    text-align: center;
+    margin-top: 7vh;
+    font-weight: bold;
+    margin-left: 5vw;
+    font-family: 'Inter';
+}
+.descriptionmid{
+    font-family: 'Inter';
+    font-size: 1.5vw;
+    color:#44009A;
+    text-align: center;
+    margin-top: 2vh;
+    font-weight: bold;
+    font-family: 'Inter';
+}
+.descriptionright{
+    font-family: 'Inter';
+    font-size: 1.5vw;
+    color:#44009A;
+    text-align: center;
+    margin-top: 7vh;
+    font-weight: bold;
+    margin-right: 5vw;
+    font-family: 'Inter';
+}
+
+.vieweditleft{
+    width: 10vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vh;
+    height: 3.5vh;
+    border-radius: 25px;
+    background-color:#994AFC;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1.5vh;
+    justify-content: center;
+    margin-left: 10vw;
+    font-family: 'Inter';
+}
+.vieweditright{
+    width: 10vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vh;
+    height: 3.5vh;
+    border-radius: 25px;
+    background-color:#994AFC;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1.5vh;
+    justify-content: center;
+    margin-right: 10vw;
+    font-family: 'Inter';
+}
+
+.vieweditmid{
+    width: 10vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vh;
+    height: 3.5vh;
+    border-radius: 25px;
+    background-color:#994AFC;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1.5vh;
+    justify-content: center;
+    font-family: 'Inter';
+    
+}
+
+.Balance-image{
+    margin-left: 5vw;
+    margin-top: 5vh;
+    border-width: 2px;
+    border-style: solid; 
+    border-color:#44009A;
+}
+.PandL-image{
+    margin-left:auto;
+    margin-right: auto;
+    border-width: 2px;
+    border-style: solid; 
+    border-color:#44009A;
+    margin-top: 5vh;
+}
+.CF-image{
+    margin-top: 5vh;
+    margin-right: 5vw;
+    border-width: 2px;
+    border-style: solid; 
+    border-color:#44009A;
+}

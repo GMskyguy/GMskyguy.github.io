@@ -1,0 +1,152 @@
+.heading{
+    height: 10%;
+    margin-top: -5px;
+    margin-left: -6px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+    margin-top: -15vh;
+
+    
+    
+}.headerimg{
+    max-height: 4vh;
+}
+.hleft-side{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+.logo{
+    background-color: white;
+    border: none;
+    margin:15px;
+}
+.logo:hover{
+    cursor:pointer;
+}
+.accountinglogo{
+    max-height: 3vh;
+    max-width: 15vw;
+}
+.sign-in{
+    margin: 15px;
+    margin-top: 3vh;
+    margin-right: 50px;
+    margin-bottom: 25px;
+    font-size: 1.5vw;
+    font-family: 'Inter';
+}
+.sign-in:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.headerbutton{
+    width: 12vw;
+    height: 6vh;
+    background-color: #660CD9;
+    border-radius: 15px;
+    border-color: black;
+    margin: 15px;
+    color: white;
+    font-size: 18;
+    font-family: 'Inter';
+}
+.headerbutton:hover{
+    cursor: pointer;
+    background-color: #44009A;
+}
+
+.mainbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 15vh;
+}
+.side{
+    background-color: 994AFC;
+    height: 60vh;
+    width: 25vw;
+    color: white;
+    font-family: 'Inter';
+    border-radius: 25px;
+    border-width: 1px;
+    justify-content: center;
+    border-style: solid;
+    border-color: black;
+
+}
+.classification{
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 3vh;
+}
+.price{
+    font-size: 2vw;
+    text-align: center;
+    margin-top: 1vh;
+}
+.type{
+    list-style-type: none;
+    text-align: left;
+    font-size: 1.3vw;
+    margin-bottom: 5h;
+}
+li{
+    margin: 15;
+}
+.buynow1{
+    
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    width: 10vw;
+    height: 5vh;
+    text-align: center;
+    background-color: 660CD9;
+    border-radius: 25px;
+    border-width: 1px;
+    justify-content: center;
+    border-style: solid;
+    border-color: black;
+    margin-top: 5vh;
+}.buynow2{
+    
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    width: 10vw;
+    height: 5vh;
+    text-align: center;
+    background-color: 660CD9;
+    border-radius: 25px;
+    border-width: 1px;
+    justify-content: center;
+    border-style: solid;
+    border-color: black;
+}.buynow3{
+    
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    width: 10vw;
+    height: 5vh;
+    text-align: center;
+    background-color: 660CD9;
+    border-radius: 25px;
+    border-width: 1px;
+    justify-content: center;
+    border-style: solid;
+    border-color: black;
+    margin-top: 7vh;
+}
